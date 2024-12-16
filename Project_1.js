@@ -1,5 +1,8 @@
-//Конвертер миль в километры. 
-//1 миля равна 1.60934 километров.
-let myDistanceMiles = window.prompt("Введите значение в милях ");
-let myDistanceKM = myDistanceMiles * 1.60934;
-console.log("Расстояние " + myDistanceMiles + " миль. равно " + myDistanceKM);
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
+theList.pop(); 
+theList.shift(); 
+theList.unshift("FIRST"); 
+theList[3] = "hello World"; 
+theList[2] = "MIDDLE"; 
+theList.push("LAST"); 
+console.log(theList);

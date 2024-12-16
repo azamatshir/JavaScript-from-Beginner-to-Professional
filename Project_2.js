@@ -1,12 +1,26 @@
-// Вычислитель индекса массы тела (ИМТ)
-// 1 дюйм равен 2.54 см;
-// 2,2046 фунта равны 1 кг;
-let inches = window.prompt("Введите значение роста в дюймах");
-let pounds = window.prompt("Введите значение веса в фунтах");
+const inventory = []; // основной массив каталога продукции
+const item1 = {
+    name: 'computer',
+    model: 'Acer',
+    cost: 50,
+    qty: 2
+};
 
-let height = inches * 2.54; // рост в сантиметрах
-let weight = pounds / 2.2046; // вес в килограммах
-console.log("Рост в сантиметрах: " + height + " Вес в килограммах: " + weight);
+const item2 = {
+    name: 'laptop',
+    model: 'MacBook',
+    cost: 100,
+    qty: 5
+};
 
-let bmi = weight / (height/100 * height/100); // ИМТ
-console.log("ИМТ: " + bmi);
+const item3 = {
+    name: 'phone',
+    model: 'samsung',
+    cost: '70',
+    qty: 15
+}
+
+inventory.push(item1, item2, item3);
+console.log(inventory);
+console.log(inventory[1].qty);
+
