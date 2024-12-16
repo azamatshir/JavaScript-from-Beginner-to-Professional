@@ -1,12 +1,12 @@
-let val = prompt("Введите число до 100");
-val = Number(val);
-let num = Math.floor(Math.random() * 100);
-let message = "nothing";
-if (val > num) {
-    message = val + "  was greater than " + num;
-} else if (val === num) {
-    message = val + "  was equal to " + num;
-} else {
-    message = val + " is less than " + num;
+const tableMy = [];
+const num = 15;
+
+for (let x = 0; x < num; x++) {
+    let temp = [];
+    for (let y = 0; y < num; y++) {
+        temp.push(x * y);
+    }
+    tableMy.push(temp);
 }
-console.log(message);
+
+console.table(tableMy);
