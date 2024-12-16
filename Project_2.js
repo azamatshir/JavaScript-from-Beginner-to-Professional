@@ -1,26 +1,14 @@
-const inventory = []; // основной массив каталога продукции
-const item1 = {
-    name: 'computer',
-    model: 'Acer',
-    cost: 50,
-    qty: 2
-};
-
-const item2 = {
-    name: 'laptop',
-    model: 'MacBook',
-    cost: 100,
-    qty: 5
-};
-
-const item3 = {
-    name: 'phone',
-    model: 'samsung',
-    cost: '70',
-    qty: 15
+// Игра Проверь друга
+let person = prompt("Введите имя");
+let message;
+switch(person) {
+    case "Азамат":
+    case "Рустам":
+    case "Эдуард":
+    case "Андрей":    
+        message = person + " мой друг";
+        break;
+    default:
+        message = "Я не знаю " + person;
 }
-
-inventory.push(item1, item2, item3);
-console.log(inventory);
-console.log(inventory[1].qty);
-
+console.log(message);
